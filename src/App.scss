@@ -1,0 +1,229 @@
+.countdown-app{
+  overflow-x: hidden;
+  width: 100%;
+  min-height: 100vh;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  background: linear-gradient(111.31deg, #4E4B66 0%, rgba(78, 75, 102, 0.98) 48.83%, rgba(78, 75, 102, 0.95) 99.82%, #4E4B66 175.56%);
+  z-index: 100;
+
+
+  .header{
+    width: 90%;
+    max-width: 1150px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 0;
+
+    .logo{
+      font-family: 'Virgo 01', sans-serif;
+      font-weight: normal;
+      font-size: 24px;
+      line-height: 28px;
+      color: #D9DBE9;
+      display: flex;
+      align-items: center;
+
+      img{
+        margin-right: .75rem;
+      }
+    }
+
+    .header-links{
+      ul{
+        width: 100%;
+        display: flex;
+        align-items: center;
+
+        li{
+          margin-right: 3rem;
+
+          a{
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 20px;
+            color: #D9DBE9;
+            opacity: 0.24;
+
+            &::after{
+              content: '';
+              display: block;
+              border-bottom: 2px solid #fff;
+              width: 0;
+              -webkit-transition: width .4s ease-in-out;
+              transition: width .4s ease-in-out;
+            }
+
+            &:hover{
+              opacity: 1;
+              border-bottom: 2px solid #fff;
+
+              &::after{
+                width: 100%;
+              }
+            }
+          }
+
+          &:last-child{
+            margin-right: 0;
+          }
+        }
+      }
+    }
+
+    @media screen and (max-width: 1000px) {
+      justify-content: center;
+
+      .logo{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        img{
+          margin-right: 0;
+          margin-bottom: 1rem;
+        }
+      }
+
+      .header-links{
+        display: none;
+      }
+    }
+  }
+
+  .about-swirge-launch{
+    width: 90%;
+    max-width: 1150px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+    .about-swirge-launch-text{
+      border-top: 1px solid #8F8798;
+      padding: 1rem;
+      width: 50%;
+
+      h4{
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 40px;
+        color: #D9DBE9;
+        margin-bottom: .75rem;
+      }
+
+      p{
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 160%;
+        color: #D9DBE9;
+        opacity: 0.6;
+        margin-bottom: 1rem;
+      }
+
+      button{
+        background: #28B0DD;
+        border: 1px solid rgba(239, 240, 246, 0.1);
+        box-sizing: border-box;
+        border-radius: 5px;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 160%;
+        color: #D9DBE9;
+        padding: .5rem 2rem;
+        cursor: pointer;
+
+        &:hover{
+          box-shadow: 0px 2px 4px #3F4155;
+        }
+      }
+    }
+
+    .about-swirge-launch-image{
+      width: 40%;
+
+      img{
+        width: 100%;
+      }
+    }
+
+    @media screen and (max-width: 1000px) {
+      flex-direction: column-reverse;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 5rem;
+
+      .about-swirge-launch-text{
+        width: 70%;
+        border-top: none;
+        text-align: center;
+
+        h4{
+          margin-bottom: 1.5rem;
+        }
+
+        p{
+          font-size: 20px;
+          margin-bottom: 1.5rem;
+        }
+      }
+
+      .about-swirge-launch-image{
+        width: 50%;
+        margin: 0 auto;
+      }
+
+    }
+
+    @media screen and (max-width: 698px) {
+
+      .about-swirge-launch-text{
+        width: 90%;
+        border-top: none;
+        text-align: center;
+      }
+
+      .about-swirge-launch-image{
+        width: 60%;
+        margin: 0 auto;
+      }
+
+    }
+
+    @media screen and (max-width: 420px) {
+
+      .about-swirge-launch-text{
+        width: 95%;
+        border-top: none;
+        text-align: center;
+      }
+
+      .about-swirge-launch-image{
+        width: 70%;
+        margin: 0 auto;
+      }
+
+    }
+  }
+
+  .socials{
+    width: 90%;
+    max-width: 1150px;
+    margin: 1rem auto;
+    margin-bottom: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    a{
+      display: block;
+      margin-right: 4rem;
+
+      &:last-child{
+        margin-right: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+.demacator{
+    background: linear-gradient(124.46deg, #666A85 11.97%, #615C79 93.02%);
+    border: 1px solid rgba(40, 176, 221, 0.1);
+    box-sizing: border-box;
+    box-shadow: 137px 4px 200px rgba(242, 143, 143, 0.08);
+    backdrop-filter: blur(72px);
+    border-radius: 11px;
+    color: #EFF0F6;
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    .block{
+        width: 32px;
+        height: 32px;
+        border-radius: 8px;
+        background: #D9DBE9;
+    }
+
+    @media screen and  (max-width: 1000px){
+        padding: .5rem 1rem;
+
+        .block{
+            width: 20px;
+            height: 20px;
+            border-radius: 8px;
+            background: #D9DBE9;
+        }
+    }
+
+}

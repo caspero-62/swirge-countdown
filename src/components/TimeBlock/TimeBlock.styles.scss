@@ -1,0 +1,42 @@
+.time-block{
+    background: linear-gradient(124.46deg, #666A85 11.97%, #615C79 93.02%);
+    border: 1px solid rgba(40, 176, 221, 0.1);
+    box-sizing: border-box;
+    box-shadow: 137px 4px 200px rgba(242, 143, 143, 0.08);
+    backdrop-filter: blur(72px);
+    border-radius: 11px;
+    color: #EFF0F6;
+    padding: 1rem 2rem;
+
+    .time-block-title, 
+    .time-block-value{
+        opacity: .7;
+        text-align: center;
+        font-weight: 900;
+    }
+
+    .time-block-title{
+        font-size: 2em;
+        line-height: 40px;
+    }
+
+    .time-block-value{
+        font-size: 6em;
+        line-height: 120px;
+        letter-spacing: 3px;
+    }
+
+    @media screen and  (max-width: 1000px){
+        padding: .5rem 1rem;
+
+        .time-block-title{
+            font-size: 1em;
+            line-height: 25px;
+        }
+
+        .time-block-value{
+            font-size: 4em;
+            line-height: 60px;
+        }
+    }
+}

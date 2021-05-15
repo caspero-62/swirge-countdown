@@ -1,0 +1,17 @@
+.countdown-renderer{
+    width: 90%;
+    max-width: 1150px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 4rem 0;
+
+    .time-block,
+    .demacator{
+        margin-right: 1rem;
+    }
+
+    .time-block:last-child{
+        margin-right: 0;
+    }
+}
