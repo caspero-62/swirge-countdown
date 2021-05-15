@@ -26,6 +26,34 @@
         letter-spacing: 3px;
     }
 
+    @media screen and (max-width: 1310px){
+        padding: 1rem 1.5rem;
+
+        .time-block-title{
+            font-size: 1.7em;
+            line-height: 50px;
+        }
+
+        .time-block-value{
+            font-size: 5.2em;
+            line-height: 60px;
+        }
+    }
+
+    // @media screen and (max-width: 1200px) {
+    //     padding: .5rem 1rem;
+
+    //     .time-block-title{
+    //         font-size: 1.1em;
+    //         line-height: 30px;
+    //     }
+
+    //     .time-block-value{
+    //         font-size: 3em;
+    //         line-height: 40px;
+    //     }
+    // }
+
     @media screen and  (max-width: 1000px){
         padding: .5rem 1rem;
 
