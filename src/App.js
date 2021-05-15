@@ -1,3 +1,4 @@
+// import { Link } from 'react-router-dom';
 import Countdown from 'react-countdown';
 import CountdownRenderer from './components/CountdownRenderer/index.component';
 import './App.scss';
@@ -7,10 +8,10 @@ function App() {
     <div className="countdown-app">
 
       <div className="header">
-        <div className="logo">
+        <a href='/' className="logo">
           <img src="/assets/img/logo.svg" alt="logo" />
           <h2>FINANCE</h2>
-        </div>
+        </a>
 
         <nav className="header-links">
           <ul>
